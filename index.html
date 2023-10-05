@@ -192,7 +192,7 @@ li a{
 
 
 /* Estilos generales para las secciones */
-.seccion-1,
+
 .seccion-2 {
     height: 500px; /* Altura deseada para cada sección */
     display: flex;
@@ -201,10 +201,6 @@ li a{
     color: white;
 }
 
-/* Estilos para la sección 1 */
-.seccion-1 {
-    background-color: black;
-}
 
 /* Estilos para la sección 2 */
 .seccion-2 {
@@ -239,6 +235,27 @@ li a{
 .divs h3 {
     font-size: 18px;
 }
+
+        /* Estilos para la sección 1 */
+.seccion-1 {
+    background-color: black;
+    font-size: 45px;
+    padding: 100px;
+      height: 500px; /* Altura deseada para cada sección */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Media query para dispositivos con un ancho de pantalla menor a 600px */
+@media (max-width: 600px) {
+    .seccion-1 {
+        font-size: 24px; /* Cambio de tamaño de fuente para dispositivos móviles */
+        padding: 20px; /* Cambio de padding para dispositivos móviles */
+    }
+}
+
 
     </style>
 </head>
