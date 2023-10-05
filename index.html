@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css">
     <title>Agencia Growth Partners</title>
     <style>
@@ -191,17 +193,6 @@ li a{
 }
 
 
-/* Estilos generales para las secciones */
-
-.seccion-2 {
-    height: 500px; /* Altura deseada para cada sección */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-
 /* Estilos para la sección 2 */
 .seccion-2 {
     background-color: white;
@@ -213,25 +204,34 @@ li a{
     text-align: center;
 }
 
-
 .contenido h2 {
     font-size: 24px;
 }
 
-/* Estilos para los divs dentro de la sección 2 */
-.divs {
-    display: flex;
-    justify-content: space-around;
+/* Estilos para los divs en dispositivos móviles */
+@media (max-width: 600px) {
+    .divs {
+        flex-direction: column;
+    }
+
+    .divs div {
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
+
+    .divs div i {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    .divs h3 {
+        font-size: 18px;
+    }
 }
 
-.divs div {
-    width: 22%; /* Ancho deseado para cada div */
-    padding: 20px;
-}
-
-.divs h3 {
-    font-size: 18px;
-}
 
         /* Estilos para la sección 1 */
 .seccion-1 {
@@ -307,25 +307,30 @@ li a{
         </div>
     </section>
 
-    <section class="seccion-2">
-        <div class="contenido">
-            <h2>¿Te sientes identificado?</h2>
-            <div class="divs">
-                <div>
-                    <h3>Tienes tanto trabajo dando un servicio de calidad que no tienes tiempo para el proceso comercial. Ni tampoco sabes cómo hacerlo bien.</h3>
-                </div>
-                <div>
-                    <h3>Has trabajado con agencias que no te han dado buenos resultados.</h3>
-                </div>
-                <div>
-                    <h3>Conversaciones y llamadas de clientes potenciales olvidadas y sin un orden.</h3>
-                </div>
-                <div>
-                    <h3>Sabes que tu negocio puede dar mejores resultados pero no tienes una guía paso a paso de cómo automatizar y crear una estrategia digital que funcione.</h3>
-                </div>
+ <section class="seccion-2">
+    <div class="contenido">
+        <h2>¿Te sientes identificado?</h2>
+        <div class="divs">
+            <div>
+                <i class="fas fa-check-circle"></i>
+                <h3>Tienes tanto trabajo dando un servicio de calidad que no tienes tiempo para el proceso comercial. Ni tampoco sabes cómo hacerlo bien.</h3>
+            </div>
+            <div>
+                <i class="fas fa-check-circle"></i>
+                <h3>Has trabajado con agencias que no te han dado buenos resultados.</h3>
+            </div>
+            <div>
+                <i class="fas fa-check-circle"></i>
+                <h3>Conversaciones y llamadas de clientes potenciales olvidadas y sin un orden.</h3>
+            </div>
+            <div>
+                <i class="fas fa-check-circle"></i>
+                <h3>Sabes que tu negocio puede dar mejores resultados pero no tienes una guía paso a paso de cómo automatizar y crear una estrategia digital que funcione.</h3>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
     <footer>
         <p>&copy; 2023 i-Partners. Todos los derechos reservados.</p>
     </footer>
