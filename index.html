@@ -116,19 +116,27 @@ li a{
     }
 }
 
-.caja {
-    max-width: 1000px;
-    margin: 0 auto; /* Centra el div horizontalmente */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+        /* Estilos para la sección de bienvenida */
+.bienvenida {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: left;
 }
+
+.bienvenida h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.bienvenida p {
+    font-size: 16px;
+}
+
 
     </style>
 </head>
 <body>
     <header>
-        <div class="caja">
         <div class="logo">
             <img src="i-Partners.png" alt="Logo de Mi Sitio Web">
         </div>
@@ -154,8 +162,13 @@ li a{
                 </li>
             </ul>
         </nav>
-        </div>
     </header>
+     <section class="bienvenida">
+        <div class="container">
+            <h1>Bienvenidos a i-Partners</h1>
+            <p>La agencia de marketing growth certificada por Google y Facebook y destacada en el mercado.</p>
+        </div>
+    </section>
     <footer>
         <p>&copy; 2023 i-Partners. Todos los derechos reservados.</p>
     </footer>
