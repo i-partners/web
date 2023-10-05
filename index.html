@@ -190,6 +190,56 @@ li a{
     }
 }
 
+
+/* Estilos generales para las secciones */
+.seccion-1,
+.seccion-2 {
+    height: 500px; /* Altura deseada para cada sección */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Estilos para la sección 1 */
+.seccion-1 {
+    background-color: black;
+}
+
+/* Estilos para la sección 2 */
+.seccion-2 {
+    background-color: white;
+    color: black;
+}
+
+/* Estilos para el contenido dentro de las secciones */
+.contenido {
+    text-align: center;
+}
+
+.contenido h1 {
+    font-size: 24px;
+}
+
+.contenido h2 {
+    font-size: 24px;
+}
+
+/* Estilos para los divs dentro de la sección 2 */
+.divs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.divs div {
+    width: 22%; /* Ancho deseado para cada div */
+    padding: 20px;
+}
+
+.divs h3 {
+    font-size: 18px;
+}
+
     </style>
 </head>
 <body>
@@ -236,7 +286,32 @@ li a{
         <div class="overlay"></div>
     </div>
 </section>
+  <section class="seccion-1">
+        <div class="contenido">
+            <h1>Automatiza tu Negocio al Completo</h1>
+            <p>y Crea un sistema infalible de ventas en tres meses</p>
+        </div>
+    </section>
 
+    <section class="seccion-2">
+        <div class="contenido">
+            <h2>¿Te sientes identificado?</h2>
+            <div class="divs">
+                <div>
+                    <h3>Tienes tanto trabajo dando un servicio de calidad que no tienes tiempo para el proceso comercial. Ni tampoco sabes cómo hacerlo bien.</h3>
+                </div>
+                <div>
+                    <h3>Has trabajado con agencias que no te han dado buenos resultados.</h3>
+                </div>
+                <div>
+                    <h3>Conversaciones y llamadas de clientes potenciales olvidadas y sin un orden.</h3>
+                </div>
+                <div>
+                    <h3>Sabes que tu negocio puede dar mejores resultados pero no tienes una guía paso a paso de cómo automatizar y crear una estrategia digital que funcione.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <p>&copy; 2023 i-Partners. Todos los derechos reservados.</p>
     </footer>
