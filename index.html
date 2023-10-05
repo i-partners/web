@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="matchpoint.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Agencia Growth Partners</title>
+    <style>
+      /* Estilos generales para el header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+/* Estilos para el menú en dispositivos móviles */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+/* Estilos para el submenú */
+.submenu {
+    position: relative;
+}
+
+.submenu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 10px;
+}
+
+.submenu:hover .submenu-list {
+    display: block;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        z-index: 1;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .submenu-list {
+        position: static;
+        display: block;
+        background-color: transparent;
+        padding: 0;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo de Mi Sitio Web">
+        </div>
+        <nav>
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li class="submenu">
+                    <a href="#">Servicios</a>
+                    <ul class="submenu-list">
+                        <li><a href="#">I-Partners</a></li>
+                        <li><a href="#">I-Sales</a></li>
+                        <li><a href="#">I-Talent</a></li>
+                        <li><a href="#">I-Landing</a></li>
+                        <li><a href="#">I-Automation</a></li>
+                        <li><a href="#">I-Assistant</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <footer>
+        <p>&copy; 2023 MatchPoint. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+
+       // JavaScript para mostrar/ocultar el menú en dispositivos móviles
+
+const menuIcon = document.querySelector(".menu-icon");
+const menu = document.querySelector(".menu");
+
+menuIcon.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
+
+        
+
+    </script>
+</body>
+</html>
