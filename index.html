@@ -270,6 +270,54 @@ li a{
 }
 
 
+        /* Estilos generales para la sección */
+.metodologia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos para cada div con clase "ipartner" */
+.ipartner {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+.ipartner img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.ipartner p {
+    margin: 10px 0;
+}
+
+/* Estilos para los divs con clase "paso" */
+.paso {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
     </style>
 </head>
 <body>
@@ -346,6 +394,40 @@ li a{
         </div>
     </div>
 </section>
+
+    <section class="metodologia">
+    <div class="ipartner">
+        <img src="imagen1.jpg" alt="Paso 1">
+        <p>Flujos de Ventas en todos los recursos que tengas: Base de Datos, Emailing, Whatsapp, Llamada con una comunicación preparada para cada</p>
+        <div class="paso">1</div>
+    </div>
+    <div class="ipartner">
+        <img src="imagen2.jpg" alt="Paso 2">
+        <p>Creamos un Calendario de Ventas con el cuál aterrizamos en tareas diarias, definidas con objetivos reales y alcanzables</p>
+        <div class="paso">2</div>
+    </div>
+    <div class="ipartner">
+        <img src="imagen3.jpg" alt="Paso 3">
+        <p>Formación en CRM y Set up de tu proyecto. Se realiza una formación a la persona encargada de las ventas para plasmar todo el proceso y el trabajo diario</p>
+        <div class="paso">3</div>
+    </div>
+    <div class="ipartner">
+        <img src="imagen4.jpg" alt="Paso 4">
+        <p>Traemos Leads cualificados y te damos garantías de ello. Te lo entregamos en Nuestro CRM en base a tu flujo de trabajo.</p>
+        <div class="paso">4</div>
+    </div>
+    <div class="ipartner">
+        <img src="imagen5.jpg" alt="Paso 5">
+        <p>Seguimiento: En un determinado tiempo veremos resultados, analizaremos a partir de 100 impactos para sacar conclusiones.</p>
+        <div class="paso">5</div>
+    </div>
+    <div class="ipartner">
+        <img src="imagen6.jpg" alt="Paso 6">
+        <p>Te indicamos las nuevas estrategias a realizar entrando en un punto de nuevos procesos, activos, planes, etc...</p>
+        <div class="paso">6</div>
+    </div>
+</section>
+
 
     <footer>
         <p>&copy; 2023 i-Partners. Todos los derechos reservados.</p>
