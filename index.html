@@ -269,19 +269,19 @@ li a{
     }
 }
 
-
-        /* Estilos generales para la sección */
+/* Estilos generales para la sección */
 .metodologia {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el encabezado h1 */
+.metodologia h1 {
+    font-size: 45px;
 }
 
 /* Estilos para cada div con clase "ipartner" */
 .ipartner {
-    width: calc(50% - 20px);
     margin-bottom: 20px;
     padding: 20px;
     text-align: center;
@@ -315,6 +315,36 @@ li a{
     align-items: center;
     font-weight: bold;
     font-size: 18px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+    /* Centrar h1 en dispositivos móviles y cambiar tamaño de fuente */
+    .metodologia h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    /* Cambiar ancho de los divs .ipartner a 100% */
+    .ipartner {
+        width: 100%;
+    }
+}
+
+/* Media query para pantallas más grandes (mayor a 600px) */
+@media (min-width: 601px) {
+    /* Cambiar disposición de los divs a fila */
+    .metodologia {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* Restaurar el ancho original de los divs .ipartner */
+    .ipartner {
+        width: calc(50% - 20px);
+    }
 }
 
 
@@ -396,6 +426,7 @@ li a{
 </section>
 
     <section class="metodologia">
+        <h1>Nuestra Metodología I-Sales</h1>
     <div class="ipartner">
         <img src="imagen1.jpg" alt="Paso 1">
         <p>Flujos de Ventas en todos los recursos que tengas: Base de Datos, Emailing, Whatsapp, Llamada con una comunicación preparada para cada</p>
