@@ -232,6 +232,21 @@ li a{
     }
 }
 
+        /* Estilos para los divs cuando la pantalla es más grande que 600px */
+@media (min-width: 601px) {
+    .divs {
+        flex-direction: row; /* Alinear en fila */
+        justify-content: space-between; /* Distribuir el espacio entre los divs */
+    }
+
+    .divs div {
+        width: calc(50% - 5px); /* El 5px es para acomodar el borde y el padding */
+        padding: 5px; /* Padding 5px */
+        text-align: center; /* Centrar contenido horizontalmente */
+        border: 1px solid black; /* Borde 1px sólido negro */
+    }
+}
+
 
         /* Estilos para la sección 1 */
 .seccion-1 {
