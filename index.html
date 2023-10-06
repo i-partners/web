@@ -380,6 +380,55 @@ li a{
     }
 }
 
+/* Estilos para la sección "compromiso" */
+.compromiso {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.compromiso h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los divs dentro de la sección "compromiso" */
+.compromiso .divs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.compromiso .compromiso-div {
+    width: calc(33.33% - 20px);
+    padding: 20px;
+    text-align: left;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.compromiso .compromiso-div h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.compromiso .compromiso-div p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .compromiso .divs {
+        flex-direction: column;
+    }
+
+    .compromiso .compromiso-div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 
 
     </style>
@@ -498,6 +547,23 @@ li a{
     <h1>Cómo generamos miles de leads para nuestros clientes de manera recurrente.</h1>
     <p>Si tienes una pequeña o mediana empresa seguramente has trabajado con agencias o community managers "expertos en redes sociales" que no obtienen ninguna venta. ¿Te suena familiar?</p>
     <p>El 90% de agencias no saben medir tu rentabilidad. Se dedican a subir bonitas publicaciones en redes pero no tienen idea sobre marketing performance.</p>
+</section>
+<section class="compromiso">
+    <h1>Compromete más a tu cliente potencial con los procesos que te damos para cerrar.</h1>
+    <div class="divs">
+        <div class="compromiso-div">
+            <h3>FREELANCE</h3>
+            <p>Los profesionales independientes suelen entregar esos leads a través de email. Se pierden tiempos y leads en el camino.</p>
+        </div>
+        <div class="compromiso-div">
+            <h3>AGENCIAS</h3>
+            <p>Las agencias no se encargan de los procesos comerciales, no son rentables para ellas y no es su especialidad. Pueden cualificar el lead hasta un punto después depende de la empresa.</p>
+        </div>
+        <div class="compromiso-div">
+            <h3>CLOSER</h3>
+            <p>Tener un "closer" (un comercial digital) externo conlleva a depender de este, son grandes profesionales por tanto tienen que sacar una buena comisión.</p>
+        </div>
+    </div>
 </section>
 
 
